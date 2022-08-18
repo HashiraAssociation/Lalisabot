@@ -215,7 +215,7 @@
       "OWNER_WELCOME_MEDIA": {
          "description": "URL of media that you want to show when owner of bot joins any chat. Supported file types (jpg, png, gif, webp, mkv, mp4).",
          "required": false,
-         "value": ""
+         "value": "https://telegra.ph/file/75f5e628bcce212f044e7.png"
       },
       "INLINE_IMG": {
          "description": "URL of image for inline querry. Must be a still image.",
