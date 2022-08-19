@@ -27,6 +27,7 @@ from Shikimori import dispatcher
 from telegram.ext import CommandHandler
 import random
 import Shikimori.strings.waifu_string as waifu_string
+import Shikimori.strings.KISS_STRING as kiss_string
 
 url_sfw_1 = "https://api.waifu.pics/sfw/" 
 url_sfw_2 = "https://nekos.best/"
@@ -148,11 +149,7 @@ def awoo(update, context):
     msg.reply_animation(img)
 
 def kiss(update, context):
-    msg = update.effective_message
-    url = f"{url_sfw_1}kiss" 
-    result = requests.get(url).json()
-    img = result['url']
-    msg.reply_animation(img)
+    update.effective_message.reply_animation(random.choice(kiss_string.kiss))
 
 def lick(update, context):
     msg = update.effective_message
