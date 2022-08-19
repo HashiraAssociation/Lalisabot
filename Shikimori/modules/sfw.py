@@ -135,11 +135,7 @@ def cry(update, context):
     msg.reply_animation(img)
 
 def hug(update, context):
-    msg = update.effective_message
-    url = f"{url_sfw_1}hug" 
-    result = requests.get(url).json()
-    img = result['url']
-    msg.reply_animation(img)
+    update.effective_message.reply_animation(random.choice(kiss_string.hug))
 
 def awoo(update, context):
     msg = update.effective_message
