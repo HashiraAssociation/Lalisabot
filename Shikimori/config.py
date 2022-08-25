@@ -80,7 +80,7 @@ class Config(object):
     NETWORK = "【V๏ɪ፝֟𝔡】»Network«"
     INLINE_IMG = "https://telegra.ph/file/8cec66d01df8c0071ebaa.jpg"
     API_WEATHER = "awoo"
-    OWNER_WELCOME_MEDIA = ""
+    OWNER_WELCOME_MEDIA = "https://telegra.ph/file/bccf854e982e58cca0586.png"
 
 class Production(Config):
     LOGGER = True
